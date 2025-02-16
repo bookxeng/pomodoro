@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -17,8 +18,8 @@ function Footer() {
                 Made by Pongnapat L.
             </div>
             <ul className='flex justify-center items-center my-2 pt-2'>
-                <a>
-                    Github
+                <a href='https://github.com/bookxeng'>
+                    <FaGithub size={45} className='hover:scale-125 duration-150'/>
                 </a>
             </ul>
         </div>

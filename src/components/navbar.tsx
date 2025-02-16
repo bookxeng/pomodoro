@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoSettingsOutline } from "react-icons/io5";
 
 function Navbar() {
   return (
@@ -7,12 +8,15 @@ function Navbar() {
             POMODORO
         </h1>
         <div className='flex'>
-            <h2 className='text-xl font-bold mx-2 px-2'>
-                Settings
-            </h2>
+            <button popoverTarget='popover' className='flex text-xl font-bold mx-2 px-2'>
+                Setting<IoSettingsOutline size={30} className='mx-1'/>
+            </button>
             <h2 className='text-xl font-bold mx-2 px-2'>
                 Theme
             </h2>
+        </div>
+        <div popover='' id='popover' className='opacity-50 rounded-md'>
+            Book
         </div>
     </div>
   )
