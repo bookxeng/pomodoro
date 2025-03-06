@@ -1,6 +1,6 @@
 'use client'
 import React, { ChangeEvent, useEffect, useRef, useState } from 'react'
-
+import Navbar from './navbar'
 
 function Content() {
 
@@ -79,6 +79,8 @@ function Content() {
 
 
   return (
+    <>
+    <Navbar timeLeft={timeLeft} setTimeLeft={setTimeLeft}/>
     <div className='flex-col max-w-[1200px] min-h-screen py-8 mx-auto justify-center'>
         <div className='flex justify-center m-6 p-4 text-xl items-center font-extrabold'>
             Let&apos;s focus !!!
@@ -107,6 +109,7 @@ function Content() {
             <button onClick={handleReset} className='border-2 border-blue-500 rounded-md text-lg font-bold m-2 p-3'>Reset</button>
         </div>
     </div>
+    </>
   )
 }
 
